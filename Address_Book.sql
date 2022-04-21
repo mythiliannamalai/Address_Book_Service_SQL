@@ -64,3 +64,6 @@ insert into Contact_Type(Name,Contact_Type) values
 ('Sharmila','Profession');
 select * from Contact_Type;
 
+--UC-10 get number of contact person get by type
+
+select count(Name) from Contact_Type group by Contact_Type;

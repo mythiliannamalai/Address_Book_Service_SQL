@@ -36,3 +36,8 @@ select * from Address_Book
 
 delete Address_Book where First_Name='Kiruba'
 select * from Address_Book
+
+--UC-6 Retrieve Person belonging to a City or State from the Address Book
+
+select First_Name from Address_Book where City='Salem';
+

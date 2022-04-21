@@ -77,3 +77,4 @@ insert into Address_Book(First_Name,Last_Name,Person_Address,City,Person_State,z
 insert into Contact_Type values('Vijaya','Family'),('Vijayaa','Profession');
 select * from Contact_Type;
 
+-- UC-12 Draw the ER Diagram for Address Book Service DB

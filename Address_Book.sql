@@ -50,3 +50,11 @@ select COUNT(*) from Address_Book group by Person_State;
 
 select * from Address_Book where City='Salem' order by First_Name asc
 
+--UC-9 identity each address book wiht name and type
+
+alter table Address_Book add Contact_Type varchar(20)
+update Address_Book set Contact_Type='Family' where First_Name in('Mythili','Naveen Kumar','Lavanya','Santhosh')
+update Address_Book set Contact_Type='Profession' where First_Name not in('Mythili','Naveen Kumar','Lavanya','Santhosh')
+select * from Address_Book
+
+

@@ -41,3 +41,9 @@ select * from Address_Book
 
 select First_Name from Address_Book where City='Salem';
 
+--UC-7 size of address book by City and State
+
+select COUNT(*) from Address_Book group by City;
+select COUNT(*) from Address_Book group by Person_State; 
+
+

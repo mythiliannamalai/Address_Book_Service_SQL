@@ -3,7 +3,7 @@ create database Address_Book_Service;
 
 --UC-2 create table
 create table Address_Book(
-First_Name varchar(50),
+First_Name varchar(50) primary key,
 Last_Name varchar(50),
 Person_Address varchar(50),
 City varchar(50),
@@ -52,13 +52,15 @@ select * from Address_Book where City='Salem' order by First_Name asc
 
 --UC-9 identity each address book wiht name and type
 
-alter table Address_Book add Contact_Type varchar(20)
-update Address_Book set Contact_Type='Family' where First_Name in('Mythili','Naveen Kumar','Lavanya','Santhosh')
-update Address_Book set Contact_Type='Profession' where First_Name not in('Mythili','Naveen Kumar','Lavanya','Santhosh')
-select * from Address_Book
+Create table Contact_Type(
+Name varchar(50) foreign key references Address_Book(First_Name),
+Contact_Type varchar(20));
 
---UC-10 get number of contact person get by type
-
-select count(First_Name) from Address_Book group by Contact_Type;
-
+insert into Contact_Type(Name,Contact_Type) values
+('Mythili','Profession'),
+('Naveen kumar','Family'),
+('Lavanya','Family'),
+('Santhosh','Family'),
+('Sharmila','Profession');
+select * from Contact_Type;
 

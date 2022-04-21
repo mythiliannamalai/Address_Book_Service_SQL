@@ -25,3 +25,9 @@ insert into Address_Book(First_Name,Last_Name,Person_Address,City,Person_State,z
 ('Kiruba','Selvaraj','nadu st','Rasipuram','Tamilnadu',636505,9790486509,'kiruba@gmail.com');
 
 select * from Address_Book
+
+--UC-4 edit existing contact person using their name
+
+update Address_Book set Last_Name='Naveen kumar' where First_Name='Mythili'
+
+select * from Address_Book

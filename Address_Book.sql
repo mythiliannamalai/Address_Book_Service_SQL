@@ -46,4 +46,7 @@ select First_Name from Address_Book where City='Salem';
 select COUNT(*) from Address_Book group by City;
 select COUNT(*) from Address_Book group by Person_State; 
 
+--UC-8 retrieve entries sorted alphabetically by Person’s name for a given city
+
+select * from Address_Book where City='Salem' order by First_Name asc
 

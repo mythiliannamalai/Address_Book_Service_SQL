@@ -57,4 +57,8 @@ update Address_Book set Contact_Type='Family' where First_Name in('Mythili','Nav
 update Address_Book set Contact_Type='Profession' where First_Name not in('Mythili','Naveen Kumar','Lavanya','Santhosh')
 select * from Address_Book
 
+--UC-10 get number of contact person get by type
+
+select count(First_Name) from Address_Book group by Contact_Type;
+
 

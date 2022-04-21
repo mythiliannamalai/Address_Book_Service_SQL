@@ -12,3 +12,16 @@ zip int,
 Phone_Number bigint,
 Email_Id varchar(20)
 );
+
+--UC-3 insert new Contacts to Address Book
+
+insert into Address_Book(First_Name,Last_Name,Person_Address,City,Person_State,zip,Phone_Number,Email_Id) values
+('Mythili','Annamalai','nadu st','Salem','Tamilnadu',636505,9790486505,'mythili@gmail.com'),
+('Naveen kumar','Selvaraj','nadu st','Salem','Tamilnadu',636505,9790486506,'naveen@gmail.com'),
+('Lavanya','Annamalai','JJ st','Salem','Tamilnadu',636002,9790486507,'lavnya@gmail.com'),
+('Santhosh','Annamalai','JJ st','Salem','Tamilnadu',636002,9790486508,'santhosh@gmail.com'),
+('Kirthana','Sathish','Ganapathi st','Kovai','Tamilnadu',636002,9790486456,'kirthana@gmail.com'),
+('Sharmila','Murugan','Ganapathi st','chennai','Tamilnadu',636505,9790486509,'sharmila@gmail.com'),
+('Kiruba','Selvaraj','nadu st','Rasipuram','Tamilnadu',636505,9790486509,'kiruba@gmail.com');
+
+select * from Address_Book

@@ -67,3 +67,13 @@ select * from Contact_Type;
 --UC-10 get number of contact person get by type
 
 select count(Name) from Contact_Type group by Contact_Type;
+
+--UC-11 add person to both Friend and Family
+
+insert into Address_Book(First_Name,Last_Name,Person_Address,City,Person_State,zip,Phone_Number,Email_Id) values
+('Vijaya','Annamalai','nadu st','Salem','Tamilnadu',636505,9629490277,'vijiya@gmail.com'),
+('Vijayaa','Annamalai','nadu st','Salem','Tamilnadu',636505,9629490277,'vijaya@gmail.com')
+
+insert into Contact_Type values('Vijaya','Family'),('Vijayaa','Profession');
+select * from Contact_Type;
+

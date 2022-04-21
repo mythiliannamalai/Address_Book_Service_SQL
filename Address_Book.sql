@@ -31,3 +31,8 @@ select * from Address_Book
 update Address_Book set Last_Name='Naveen kumar' where First_Name='Mythili'
 
 select * from Address_Book
+
+--UC-5 delete a person using person's name
+
+delete Address_Book where First_Name='Kiruba'
+select * from Address_Book
